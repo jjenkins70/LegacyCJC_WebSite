@@ -77,6 +77,7 @@ div.article .line{
 	background-color:#15242a;
 	border-bottom-color:#204656;
 	margin:1.3em 0;
+	color:#fcfcfc;
 }
 
 div.footer .line{
@@ -187,18 +188,18 @@ div.footer p{
 	position:relative;
 }
 
-div.footer a,div.footer a:visited{
+div.footer a,div.goup a,div.footer a:visited{
 	color:#cccccc;
-	background-color:#213e4a;
+	background-color:#663366;
 	display:block;
 	padding:2px 4px;
 	z-index:100;
 	position:relative;
 }
 
-div.footer a:hover{
+div.footer a, div.goup a:hover{
 	text-decoration:none;
-	background-color:#142830;
+	background-color:#330033;
 }
 
 div.footer a.by{
