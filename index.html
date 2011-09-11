@@ -1,57 +1,37 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-    
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        
         <title>CrossJoin Consulting, LLC </title>
-        
         <link rel="stylesheet" type="text/css" href="styles.css" />
-               
-        <!--[if IE]>
-        
-        <style type="text/css">
-        .clear {
-          zoom: 1;
-          display: block;
-        }
-        </style>
+        <script type="text/javascript" src="jquery/jquery1.3.2.js"></script>
+        <script type="text/javascript" src="jquery/jquery.hideAllExceptOne.js"></script> 
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $.hideAllExcept();
+            });
 
-        
-        <![endif]-->
-        
+        </script>
     </head>
-    
     <body>
-
-    	<div class="section" id="page"> <!-- Defining the #page section with the section tag -->
-    
-            <div class="header"> <!-- Defining the header section of the page with the appropriate tag -->
-
-                <h1>Put Logo</h1>
-                <h3>Catch Phrase :)</h3>
-                
-                <div class="nav clear"> <!-- The nav link semantically marks your main site navigation -->
+    	<div class="section" id="page">
+            <div class="header">
+                <h1 style="display: inline"><img src="img/cjclogo.jpg" alt="" width="75" /></h1>
+                <div class="nav clear" id="tabs">
                     <ul>
-                        <li><a href="#article1">What is CJC</a></li>
-                        <li><a href="#article2">Founders</a></li>
-                        <li><a href="#article3">Contact CJC</a></li>
+                        <li><a class="toggle" href="#What">What is CJC</a></li>
+                        <li><a class="toggle" href="#Founders">Founders</a></li>
+                        <li><a class="toggle" href="#Contact">Contact CJC</a></li>
                     </ul>
                 </div>
-            
             </div>
-            
-            <div class="section" id="articles"> <!-- A new section with the articles -->
-
-				<!-- Article 1 start -->
-
-                <div class="line"></div>  <!-- Dividing line -->
-                
-                <div class="article" id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+            <hr />
+            <div class="section" id="toggleThis">
+                <div class="article" id="What"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
                     <h2>What is CrossJoin Consulting, LLC</h2>
                     
-                    <div class="line"></div>
+                    <hr />
                     
                     <div class="articleBody clear">
                     
@@ -59,27 +39,22 @@
 	                    	<a href="http://tutorialzine.com/2010/02/photo-shoot-css-jquery/"><img src="http://tutorialzine.com/img/featured/641.jpg" width="620" height="340" alt="Image one" /></a>
                         </div>
                         
-                        <p>We will put a nice picture of something.  We will talk about us.  Our mission statement</p>
+                        <p>
+                        CrossJoin Consulting was founded by Brian and JJ to give them a voice in the mobile development and web application world.  We also can create custom solutions (web, web application, mobile applications) to our customers, just contact us to find out more.  
+                        <br /><br />
+                        You will be hearing about two of our initial products in our blog section, both of them will be a way to help organize, store and retrieve data.  There is nothing like it today in the market place, which makes us excited to deliver a prototype in the very near future.
+                        <br /><br />
+                        You can reach us via email <a href="mailto:contactus@crossjoinconsulting.com">contactus@crossjoinconsulting.com</a>
+                        </p>
                          <br />
                         
                       
-                    </div>
-                      <div class ="goup">
-                 		  <a href="#" class="up">Go UP</a>
-                  	  </div>  
+                    </div>  
                 </div>
-                
-				<!-- Article 1 end -->
-
-
-				<!-- Article 2 start -->
-
-                <div class="line"></div>
-                
-                <div class="article" id="article2">
+                <div class="article" id="Founders">
                     <h2>Founders</h2>
                     
-                    <div class="line"></div>
+                    <hr />
                     
                     <div class="articleBody clear">
                     	<div class="figure">
@@ -88,57 +63,29 @@
                         
                         <p>Talk about what our experience is.  Maybe a pic of models.</p>
                     
-                    </div>
-                      <div class ="goup">
-                 		  <a href="#" class="up">Go UP</a>
-                  	  </div>  
+                    </div> 
                 </div>
-                
-				<!-- Article 2 end -->
-
-				<!-- Article 3 start -->
-
-                <div class="line"></div>
-                
-                <div class="article" id="article3">
+                <div class="article" id="Contact">
                     <h2>Contact Us</h2>
                     
-                    <div class="line"></div>
+                    <hr />
                     
                     <div class="articleBody clear">
                     	<div class="figure">
 	                    	<a href="http://tutorialzine.com/2010/01/halftone-navigation-menu-jquery-css/"><img src="http://tutorialzine.com/img/featured/610.jpg" width="620" height="340" alt="Image three" /></a>
                         </div>
-                        
+                        <br />
+                        <h4>Sales: </h4>(571) 989-2520<br />
+                        <h4>E-mail:</h4><a href="mailto:contactus@crossjoinconsulting.com">contactus@crossjoinconsulting.com</a><br /><br />
                         <p>A picture of stuff (web apps and such) talk about what we will do.  give them our contact information.  sales@, owners@ Phone #</p>
                         <p> To do - not here though, mobile bar, let them link to our twitter and jazz hands.</p>
                     </div>
-                  	  <div class ="goup">
-                 		  <a href="#" class="up">Go UP</a>
-                  	  </div>  
                 </div>
-                
-				<!-- Article 3 end -->
-
-
             </div>
-
-        <div class="footer"> <!-- Marking the footer section -->
-
-          <div class="line"></div>
-           
-           <p>Copyright 2011 - CrossJoinConsulting.com</p> <!-- Change the copyright notice -->
-           
-           <a href="#" class="up">Go UP</a>
-         
-        </div>
-            
-		</div> <!-- Closing the #page section -->
-        
-        <!-- JavaScript Includes -->
-        
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-        <script type="text/javascript" src="jquery.scrollTo-1.4.2/jquery.scrollTo-min.js"></script>
-        <script type="text/javascript" src="script.js"></script>
+            <hr />
+            <span class="footer"> 
+              Copyright 2011 - CrossJoinConsulting.com
+            </span>
+		</div>
     </body>
 </html>
