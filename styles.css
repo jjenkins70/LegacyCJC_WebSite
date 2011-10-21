@@ -142,7 +142,7 @@ div.nav, div.article, div.nav ul li a,div.figure{
 /* Article styles: */
 
 #page{
-	width:960px;
+	width:1100px;
 	margin:0 auto;
 	position:relative;
 }
@@ -151,17 +151,15 @@ div.article{
 	background-color:#663366;
 	margin:1em 0;
 	padding:20px;
-	
+	height: 500px;
 	text-shadow:0 2px 0 black;
 }
 
 div.figure{
 	border:3px solid #142830;
 	float:right;
-	height:300px;
 	margin-left:15px;
 	overflow:hidden;
-	width:500px;
 }
 
 div.figure:hover{
